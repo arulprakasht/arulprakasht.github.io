@@ -19,7 +19,18 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-02T17:18:17-08:00","datePublished":"2024-01-02T17:18:17-08:00","description":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.","headline":"Getting Started!","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/docs/jekyll/update/2024/01/02/welcome-to-jekyll.html"},"url":"http://localhost:4000/docs/jekyll/update/2024/01/02/welcome-to-jekyll.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/docs/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/docs/feed.xml" title="Arul Prakash" /></head>
+<link rel="stylesheet" href="/docs/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/docs/feed.xml" title="Arul Prakash" />
+<!-- adding msft clarity-->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "qh7ffnrci4");
+</script>
+<!-- msft clarity -->
+
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/docs/">Arul Prakash</a><nav class="site-nav">
