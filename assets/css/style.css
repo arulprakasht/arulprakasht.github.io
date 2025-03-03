@@ -24,35 +24,109 @@ body {
 }
 
 -->
-
-
+/* Updating the color scheme of the Jekyll site */
+:root {
+    --primary-color: #ff1d58; /* Yass Queen */
+    --secondary-color: #f75990; /* Sister Sister */
+    --accent-color: #fff685; /* Crown Yellow */
+    --light-blue: #00DDFF; /* Blue Light */
+    --brutal-blue: #0049B7; /* Brutal Blue */
+}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #c2edda;
-}
-.hero {
-    background: linear-gradient(135deg, #f43a09, #ffb766); /* Brightly Orange Number 2 and Grandpa Orange */
-    color: #fcfcfc;
-    text-align: center;
-    padding: 30px 10px;
-}
-.cta {
-    background: #FFFFFF; /* white */
-    color: #0a66c2; /* Linkedin Blue */
-    padding: 6px 12px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 5px;
-}
-.section {
-    background-color: #c2edda; /* Grey Blue Green */
-    padding: 40px 20px;
-    text-align: center;
-    color: #333;
+    background-color: var(--light-blue);
+    color: var(--brutal-blue);
+    font-family: 'Arial', sans-serif;
 }
 
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--brutal-blue);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Align LinkedIn and Calendly embed in the same row */
+.social-embeds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-embeds iframe {
+    border-radius: 5px;
+    border: none;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Call to Action (CTA) */
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta button {
+    margin-top: 15px;
+}
