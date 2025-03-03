@@ -1,31 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
+    <title>Your Name | Portfolio</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
-<div class="social-embeds">
-    <iframe src="https://www.linkedin.com/in/arulprakasht?trk=profile-badge" width="400" height="300"></iframe>
-    <iframe src="https://calendly.com/arulprakasht01/30min" width="400" height="300"></iframe>
-</div>
-
-<!-- Clarity Code  -->
+<!-- Clarity Code Begin -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "qgfjlehbsh");
-
-
-</script>
-  
+    })(window, document, "clarity", "script", "qgfjlehbsh");    
+<!-- Clarity Code End -->      
+    
 </head>
 <body>
+
+<header>
+    <h1>Your Name</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
     {{ content }}
+</main>
+
+<footer>
+    <p>© 2025 Your Name. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
 
