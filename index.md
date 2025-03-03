@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Arul Prakash | Building enterprise grade products and services
+title: Arul Prakash | Building enterprise products and services
 ---
 
 {% include header.html %}
