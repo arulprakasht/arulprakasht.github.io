@@ -35,17 +35,24 @@ body {
     color: #333;
 }
 .hero {
-    background: linear-gradient(135deg, #ebf6f5, #444);
+    background: linear-gradient(135deg, #f43a09, #ffb766); /* Brightly Orange Number 2 and Grandpa Orange */
     color: #fcfcfc;
     text-align: center;
     padding: 60px 20px;
 }
 .cta {
-    background: #007bff;
-    color: ##5cbdb9;
+    background: #68d388; /* Live Green */
+    color: #ffb766; /* Grandpa Orange */
     padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
 }
+.section {
+    background-color: #c2edda; /* Grey Blue Green */
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+}
+
