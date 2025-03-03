@@ -32,7 +32,7 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4;
-    color: #333;
+    color: #c2edda;
 }
 .hero {
     background: linear-gradient(135deg, #f43a09, #ffb766); /* Brightly Orange Number 2 and Grandpa Orange */
@@ -42,12 +42,12 @@ body {
 }
 .cta {
     background: #FFFFFF; /* white */
-    color: #0a66c2; /*Linkedin Blue"
-    padding: 12px 24px;
+    color: #0a66c2; /* Linkedin Blue */
+    padding: 6px 12px;
     text-decoration: none;
     border-radius: 5px;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .section {
     background-color: #c2edda; /* Grey Blue Green */
