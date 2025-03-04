@@ -22,22 +22,17 @@ title: Arul Prakash | Building enterprise products and services
             background: #0072b1;
             color: white;
             text-align: center;
-            padding: 10px 5px;
+            padding: 20px;
         }
         .container {
             max-width: 1100px;
             margin: auto;
-            padding: 20px 10px;
+            padding: 20px;
         }
         .grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-        }
-        @media (max-width: 768px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
         }
         .card {
             background: white;
@@ -65,22 +60,25 @@ title: Arul Prakash | Building enterprise products and services
         }
         .calendly {
             text-align: center;
-            padding: 20px 10px;
+            padding: 20px;
+        }
+        @media (max-width: 768px) {
+            .hero {
+                padding: 15px;
+            }
+            .container {
+                padding: 15px;
+            }
         }
     </style>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D5Y8DBQYN7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D5Y8DBQYN7');
-</script>
-       <!-- Clarity tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5Y8DBQYN7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-D5Y8DBQYN7');
+    </script>
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -88,38 +86,12 @@ title: Arul Prakash | Building enterprise products and services
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "qgfjlehbsh");
     </script>
-
 </head>
 <body>
     <header class="hero">
         <h1>Arul Prakash</h1>
         <p>Engineering Lead | Stealth Founder | Tech Builder</p>
-       <!--        <a href="#" class="btn">Download CV</a> -->
     </header>
- <!---- 
-    <section class="about">
-        <div class="container">
-            <div class="grid">
-                <div class="card">
-                    <h3>Interests</h3>
-                    <ul>
-                        <li>Artificial Intelligence</li>
-                        <li>Computational Linguistics</li>
-                        <li>Information Retrieval</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Education</h3>
-                    <ul>
-                        <li>PhD in AI, Stanford University</li>
-                        <li>MEng in AI, MIT</li>
-                        <li>BSc in AI, MIT</li>
-                    </ul>
-                </div>
-                         </div>
-        </div>
-    </section>
--->
 
 <section class="container">
     <div class="grid">
@@ -128,56 +100,22 @@ title: Arul Prakash | Building enterprise products and services
                 <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/arulprakasht?trk=profile-badge"></a>
             </div>
         </div>
-        <div class="card-calendly">
+        <div class="card calendly">
             <h3>Schedule a Meeting</h3>
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/arulprakasht01" style="min-width:320px;height:700px;"></div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/arulprakasht01" style="min-width:320px;height:600px;"></div>
             <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
         </div>
-        <div class="card-free-text">
-            <h2></h2>
-            <p>Engineering leader with experience in building scalable and reliable solutions. </p>
-                    <ul>
-                        <li>Enterprise Software</li>
-                        <li>Data</li>
-                        <li>Observability</li>
-                        <li>Cloud</li>
-                    </ul>
+        <div class="card">
+            <h3>About Me</h3>
+            <p>Engineering leader with experience in building scalable and reliable solutions.</p>
+            <ul>
+                <li>Enterprise Software</li>
+                <li>Data</li>
+                <li>Observability</li>
+                <li>Cloud</li>
+            </ul>
         </div>
     </div>
 </section>
-
-<style>
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 20px;
-}
-
-.card {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.card-free-text {
-
-background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: #0072b1
-}
-
-</style>
-
 </body>
 </html>
