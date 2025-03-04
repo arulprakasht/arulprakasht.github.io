@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Arul Prakash | Building enterprise products and services
+title: Home
 ---
 
 <!DOCTYPE html>
@@ -19,20 +19,25 @@ title: Arul Prakash | Building enterprise products and services
             padding: 0;
         }
         .hero {
-            background: #0072b1;
+            background: linear-gradient(135deg, #004d40, #00796b);
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .container {
             max-width: 1100px;
             margin: auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
         .card {
             background: white;
@@ -45,13 +50,14 @@ title: Arul Prakash | Building enterprise products and services
             transform: translateY(-5px);
         }
         h3 {
-            color: #0072b1;
+            color: #00796b;
         }
         .linkedin-banner {
             text-align: center;
             padding: 20px;
             background: #0077b5;
             color: white;
+            border-radius: 10px;
         }
         .linkedin-banner a {
             color: white;
@@ -60,62 +66,44 @@ title: Arul Prakash | Building enterprise products and services
         }
         .calendly {
             text-align: center;
-            padding: 20px;
-        }
-        @media (max-width: 768px) {
-            .hero {
-                padding: 15px;
-            }
-            .container {
-                padding: 15px;
-            }
+            padding: 40px 20px;
         }
     </style>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5Y8DBQYN7"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-D5Y8DBQYN7');
-    </script>
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "qgfjlehbsh");
-    </script>
 </head>
 <body>
     <header class="hero">
         <h1>Arul Prakash</h1>
-        <p>Engineering Lead | Stealth Founder | Tech Builder</p>
+        <h2>Engineering Lead | Stealth Founder | Tech Builder</h2>
+        <p>Short bio about your work and interests.</p>
     </header>
-
-<section class="container">
-    <div class="grid">
-        <div class="card linkedin-banner">
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="arulprakasht" data-version="v1">
-                <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/arulprakasht?trk=profile-badge"></a>
+    
+    <section class="container">
+        <div class="grid">
+            <div class="card">
+                <h3>About Me</h3>
+                <p>Engineering leader with experience in building scalable and reliable solutions.</p>
+                <ul>
+                    <li>Enterprise Software</li>
+                    <li>Data</li>
+                    <li>Observability</li>
+                    <li>Cloud</li>
+                </ul>
+            </div>
+            <div class="card linkedin-banner">
+                <script src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="arulprakasht" data-version="v1">
+                    <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/arulprakasht?trk=profile-badge">Arul Prakash</a>
+                </div>
+            </div>
+            <div class="card calendly">
+                <h2>Schedule a Meeting</h2>
+                <p>Book a time with me using Calendly.</p>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/arulprakasht01" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
             </div>
         </div>
-        <div class="card calendly">
-            <h3>Schedule a Meeting</h3>
-            <div class="calendly-inline-widget" data-url="https://calendly.com/arulprakasht01" style="min-width:320px;height:600px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        </div>
-        <div class="card">
-            <h3>About Me</h3>
-            <p>Engineering leader with experience in building scalable and reliable solutions.</p>
-            <ul>
-                <li>Enterprise Software</li>
-                <li>Data</li>
-                <li>Observability</li>
-                <li>Cloud</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
 </body>
 </html>
