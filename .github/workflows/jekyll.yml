@@ -1,0 +1,41 @@
+name: Deploy Jekyll Site
+
+on:
+  push:
+    branches:
+      - main  # Change if your default branch is different
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1
+
+      - name: Install Jekyll Dependencies
+        run: bundle install
+
+      - name: Build Jekyll Site with Secrets
+        env:
+          GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
+          MICROSOFT_CLARITY_ID: ${{ secrets.MICROSOFT_CLARITY_ID }}
+          GOOGLE_ADS_CLIENT: ${{ secrets.GOOGLE_ADS_CLIENT }}
+          LINKEDIN_PROFILE: ${{ secrets.LINKEDIN_PROFILE }}
+        run: |
+          echo "google_analytics_id: '$GOOGLE_ANALYTICS_ID'" >> _config.yml
+          echo "microsoft_clarity_id: '$MICROSOFT_CLARITY_ID'" >> _config.yml
+          echo "google_ads_client: '$GOOGLE_ADS_CLIENT'" >> _config.yml
+          echo "linkedin_profile: '$LINKEDIN_PROFILE'" >> _config.yml
+          JEKYLL_ENV=production bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
