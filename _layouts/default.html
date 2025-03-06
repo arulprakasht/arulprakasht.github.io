@@ -61,7 +61,6 @@ title: Arul Prakash | Building enterprise products and services
             display: flex;
             justify-content: center;
             align-items: center;
-        
         }
 
         .card:hover {
@@ -94,29 +93,37 @@ title: Arul Prakash | Building enterprise products and services
         }
     </style>
 
-    <!-- Platform.linkedin-->
+    <!-- LinkedIn Platform Script -->
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-    <!-- Microsoft Clarity -->
+    <!-- Microsoft Clarity Tracking -->
+    {% if site.microsoft_clarity_id %}
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/{{ site.microsoft_clarity_id }}";
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "qgfjlehbsh");
+        })(window, document, "clarity", "script", "{{ site.microsoft_clarity_id }}");
     </script>
+    {% endif %}
 
-    <!-googleads-->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4101780432430093"
+    <!-- Google Ads -->
+    {% if site.google_ads_client %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.google_ads_client }}"
      crossorigin="anonymous"></script>
+    {% endif %}
+
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5Y8DBQYN7"></script>
+    {% if site.google_analytics_id %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_id }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag(){ dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'G-D5Y8DBQYN7');
+        gtag('config', '{{ site.google_analytics_id }}');
     </script>
+    {% endif %}
+
 </head>
 <body>
     <header class="hero">
@@ -127,16 +134,22 @@ title: Arul Prakash | Building enterprise products and services
     <section class="container">
         <div class="grid">
             <div class="card">
-                <a href="https://www.linkedin.com/in/arulprakasht?trk=profile-badge" class="btn">Connect on LinkedIn</a>
+                {% if site.linkedin_profile %}
+                <a href="https://www.linkedin.com/in/{{ site.linkedin_profile }}?trk=profile-badge" class="btn">Connect on LinkedIn</a>
                 <h3></h3>
-                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="arulprakasht" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/arulprakasht?trk=profile-badge"> </a></div>
-              
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light"
+                     data-type="HORIZONTAL" data-vanity="{{ site.linkedin_profile }}" data-version="v1">
+                    <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/{{ site.linkedin_profile }}?trk=profile-badge"></a>
+                </div>
+                {% endif %}
             </div>
+            
             <div class="card">
                 <h3>Schedule a Meeting</h3>
                 <div class="calendly-inline-widget" data-url="https://calendly.com/arulprakasht01" style="min-width:320px;height:700px;"></div>
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             </div>
+            
             <div class="card">
                 <h3>Services</h3>
                 <ul>
