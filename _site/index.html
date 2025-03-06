@@ -1,10 +1,11 @@
+<!-- -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+<!---  <link rel="stylesheet" href="/assets/css/style.css">  -->
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -56,7 +57,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-        
         }
 
         .card:hover {
@@ -89,26 +89,37 @@
         }
     </style>
 
-    <!-- Platform.linkedin-->
+    <!-- LinkedIn Platform Script -->
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-    <!-- Microsoft Clarity -->
+    <!-- Microsoft Clarity Tracking -->
+    
     <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/{{ site.MICROSOFT_CLARITY_ID }}";
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "qgfjlehbsh");
+        })(window, document, "clarity", "script", "{{ site.MICROSOFT_CLARITY_ID }}");
     </script>
     
+
+    <!-- Google Ads -->
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.GOOGLE_ADS_CLIENT }}"
+     crossorigin="anonymous"></script>
+    
+
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5Y8DBQYN7"></script>
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.GOOGLE_ANALYTICS_ID }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag(){ dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'G-D5Y8DBQYN7');
+        gtag('config', '{{ site.GOOGLE_ANALYTICS_ID }}');
     </script>
+    
+
 </head>
 <body>
     <header class="hero">
@@ -119,16 +130,22 @@
     <section class="container">
         <div class="grid">
             <div class="card">
-                <a href="https://www.linkedin.com/in/arulprakasht?trk=profile-badge" class="btn">Connect on LinkedIn</a>
+                 
+                <a href="https://www.linkedin.com/in/arulprakasht" class="btn">Connect on LinkedIn</a>
                 <h3></h3>
-                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="arulprakasht" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/arulprakasht?trk=profile-badge"> </a></div>
-              
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light"
+                     data-type="HORIZONTAL" data-vanity="arulprakasht" data-version="v1">
+                    <a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/arulprakasht?trk=profile-badge"></a>
+                </div>
+                 
             </div>
+            
             <div class="card">
                 <h3>Schedule a Meeting</h3>
                 <div class="calendly-inline-widget" data-url="https://calendly.com/arulprakasht01" style="min-width:320px;height:700px;"></div>
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
             </div>
+            
             <div class="card">
                 <h3>Services</h3>
                 <ul>
