@@ -6,3 +6,4 @@ microsoft_clarity_id: "{{ site.MICROSOFT_CLARITY_ID }}"
 google_ads_client: "{{ site.GOOGLE_ADS_CLIENT }}"
 linkedin_profile: "{{ site.LINKEDIN_PROFILE }}"
 
+/* */
