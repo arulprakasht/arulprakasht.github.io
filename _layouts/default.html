@@ -96,17 +96,21 @@ title: Arul Prakash | Building enterprise products and services
     <!-- LinkedIn Platform Script -->
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
-    <!-- Microsoft Clarity Tracking -->
+   <!-- Microsoft Clarity Tracking -->
     {% if site.microsoft_clarity_id %}
-    <script type="text/javascript">
+
+
+        <script type="text/javascript">
         (function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/{{ site.microsoft_clarity_id }}";
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
             y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
         })(window, document, "clarity", "script", "{{ site.microsoft_clarity_id }}");
     </script>
-    {% endif %}
 
+    </script>
+    {% endif %}
+    
     <!-- Google Ads -->
     {% if site.google_ads_client %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.google_ads_client }}"
