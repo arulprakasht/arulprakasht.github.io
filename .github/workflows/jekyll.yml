@@ -28,6 +28,7 @@ jobs:
           GOOGLE_ADS_CLIENT: ${{ secrets.GOOGLE_ADS_CLIENT }}
           LINKEDIN_PROFILE: ${{ secrets.LINKEDIN_PROFILE }}
         run: |
+          echo $MICROSOFT_CLARITY_ID
           echo "google_analytics_id: '$GOOGLE_ANALYTICS_ID'" >> _config.yml
           echo "microsoft_clarity_id: '$MICROSOFT_CLARITY_ID'" >> _config.yml
           echo "google_ads_client: '$GOOGLE_ADS_CLIENT'" >> _config.yml
